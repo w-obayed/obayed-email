@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obayed</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      .header img {
+        width: 200px;
+      }
+      .content {
+        background-color: #1e1b4b;
+        padding: 30px;
+        color: white;
+        line-height: 1.6;
+      }
+      .greeting {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: popins, sans-serif;
+        margin-bottom: 20px;
+      }
+      .intro-text {
+        font-size: 15px;
+        font-family: popins, sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+      .process-title {
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .specialization {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      .services {
+        margin-bottom: 25px;
+      }
+      .service-item {
+        display: block;
+        align-items: center;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        font-size: 15px;
+      }
+      .service-item::before {
+        content: "✓";
+        color: #b91c1c;
+        font-weight: 600;
+        margin-right: 8px;
+        font-size: 14px;
+      }
+      .partnership-text {
+        font-size: 15px;
+        margin-bottom: 20px;
+        font-family: popins, sans-serif;
+        font-weight: 400;
+      }
+      .closing {
+        margin-bottom: 30px;
+      }
+      .closing p {
+        font-size: 15px;
+        font-family: popins, sans-serif;
+        font-weight: 400;
+      }
+      .stats {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 20px 0;
+        border-top: 1px solid #374151;
+        border-bottom: 1px solid #374151;
+        /* Remove flex properties for email compatibility */
+      }
+      .stat-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      .stat-item {
+        text-align: center;
+        padding: 10px 0;
+        /* Remove flex property */
+      }
+      .stat-number {
+        color: #bf0a0a;
+        font-size: 30px;
+        font-weight: 700;
+        display: block;
+      }
+      .stat-label {
+        font-size: 15px;
+        color: #d1d5db;
+      }
+      .cta-buttons {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .cta-button {
+        background-color: #bf0a0a;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+        transition: background-color 0.3s;
+      }
+      .cta-button:hover {
+        background-color: #b91c1c;
+      }
+      .social-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .social-links-table {
+        margin: 0 auto;
+      }
+      .social-links-table td {
+        padding: 0 8px;
+      }
+      .social-links img {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <img
+          src="https://w-obayed.github.io/obayed/image/logo-o.png"
+          alt="OBAYED"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="content">
+        <h3 class="greeting">Hello,</h3>
+        <p class="intro-text">
+          Imagine your next big project—designed beautifully, engineered for
+          performance, and built to scale.
+        </p>
+        <p class="intro-text">
+          <span class="process-title">My Complete Process:</span> <br />
+          🔍 Research your idea & market → ⚡ Design custom algorithms → 🏗️
+          Build scalable system architecture → 💻 Write clean, optimized code →
+          🧪 Test & debug thoroughly → 📋 Document & deploy to production → 🔧
+          Maintain & monitor performance
+        </p>
+        <p class="specialization">
+          <span class="process-title">Plus Marketing Support:</span> <br />
+          Once your product is running, I can help scale your business using
+          proven marketing tools and strategies.
+        </p>
+
+        <div class="services">
+          <h3 class="process-title">What You Get:</h3>
+          <div class="service-item">
+            Full-stack development from MVP to production
+          </div>
+          <div class="service-item">
+            Technical partner who understands code and customers
+          </div>
+          <div class="service-item">
+            Scalable SaaS and custom digital solutions
+          </div>
+          <div class="service-item">
+            End-to-end service using industry-leading tools
+          </div>
+        </div>
+
+        <p class="partnership-text">
+          This isn't mass outreach—I've researched your business and believe I
+          can add real value to your project.
+        </p>
+
+        <div class="closing">
+          <p>Ready to build something that works and grows?</p>
+          <p></p>
+          <p>Warm regards,</p>
+          <p>Obayed</p>
+        </div>
+
+        <!-- Replace .stats div with a table for email compatibility -->
+        <div class="stats">
+          <table class="stat-table">
+            <tr>
+              <td class="stat-item">
+                <span class="stat-number">100+</span>
+                <div class="stat-label">Website built</div>
+              </td>
+              <td class="stat-item">
+                <span class="stat-number">2</span>
+                <div class="stat-label">Web application</div>
+              </td>
+              <td class="stat-item">
+                <span class="stat-number">10+</span>
+                <div class="stat-label">Happy clients</div>
+              </td>
+              <td class="stat-item">
+                <span class="stat-number">12+</span>
+                <div class="stat-label">Tools & Frameworks</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="cta-buttons">
+          <a
+            href="https://github.com/w-obayed?tab=repositories"
+            class="cta-button"
+            >GitHub projects</a
+          >
+          <a href="https://obayed.shop" class="cta-button">See my work</a>
+        </div>
+
+        <!-- Replace .social-links div content with a table for email compatibility -->
+        <div class="social-links">
+          <table
+            class="social-links-table"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+          >
+            <tr>
+              <td>
+                <a href="https://www.linkedin.com/in/w-obayed" target="_blank">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </td>
+              <td>
+                <a href="https://github.com/w-obayed" target="_blank">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="GitHub"
+                  />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.youtube.com/@obayed-w" target="_blank">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                    alt="YouTube"
+                  />
+                </a>
+              </td>
+              <td>
+                <a href="https://w-obayed.github.io/obayed" target="_blank">
+                  <img
+                    src="https://www.freeiconspng.com/uploads/website-icon-8.png"
+                    width="350"
+                    alt="Website"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
